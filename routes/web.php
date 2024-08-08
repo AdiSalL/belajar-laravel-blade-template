@@ -43,3 +43,9 @@ Route::get("/disabled", function() {
     ]);
 });
 
+Route::get("/for-loop", function() {
+    return view("for-loop", [
+        "limit" => 10
+    ]);
+});
+
