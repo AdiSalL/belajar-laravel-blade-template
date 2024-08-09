@@ -43,9 +43,18 @@ Route::get("/disabled", function() {
     ]);
 });
 
-Route::get("/for-loop", function() {
-    return view("for-loop", [
-        "limit" => 10
+Route::get("/each", function() {
+    return view("each", [ "users" => [
+        [
+            "name" => "adisalafudin",
+            "hobbies" => ["makan", "minum"]
+        ]
+    ]]);
+});
+
+Route::get("/extending", function() {
+    return view("extending", [
+        "name" => "Eko"
     ]);
 });
 
